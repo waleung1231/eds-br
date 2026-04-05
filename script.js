@@ -1,14 +1,3 @@
-// Fullscreen on video click
-const mainVideo = document.getElementById('main-video');
-if (mainVideo) {
-  mainVideo.addEventListener('click', () => {
-    if (mainVideo.requestFullscreen) mainVideo.requestFullscreen();
-    else if (mainVideo.webkitRequestFullscreen) mainVideo.webkitRequestFullscreen();
-    else if (mainVideo.mozRequestFullScreen) mainVideo.mozRequestFullScreen();
-    mainVideo.play();
-  });
-}
-
 // Scroll-reveal animation
 const observer = new IntersectionObserver(
   (entries) => {
